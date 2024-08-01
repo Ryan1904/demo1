@@ -29,7 +29,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/login")
-    public Result<UserLoginVO> UserLogin(@RequestBody UserLoginVO userLoginVO) {
+    public Result<User> UserLogin(@RequestBody UserLoginVO userLoginVO) {
         log.info("用户登录操作");
         try {
             User login = userService.login(userLoginVO); // 登录成功后，生成jwt令牌
@@ -38,15 +38,18 @@ public class UserController {
 
             // 使用JWT工具类
             String token = JwtUtil.generateJwt(claims);
+            Integer expire = JwtUtil.getExpire();
             log.info("用户令牌为:{}", token);
 
+            /*
             User user = User.builder()
                     .id(login.getId())
                     .username(login.getUsername())
                     .token(token)
                     .build();
+             */
 
-            return Result.success(user);
+            return Result.success(token,expire);
         } catch (CaptchaErrorException e) {
             return Result.error(MessageConstant.Captcha_ERROR, 500, false); //TODO codeShow写死为false
         } catch (PasswordErrorException e) {

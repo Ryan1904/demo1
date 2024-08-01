@@ -1,5 +1,6 @@
 package com.wyu.demo.pojo.Result;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,26 +8,41 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL) //在序列化时忽略"null"值
 public class Result<T> {
     private String msg; //响应信息 描述字符串
     private Integer code;//响应码
-    private Object data; //返回的数据
+    private T data; //返回的数据
+    private Integer expire; //token过期时间
+    private String token; //jwt token
+    private Boolean codeShow; //显示验证码
 
 
     //成功响应 无数据返回
-    //TODO 结果返回格式不符合需求文档
-    public static Result success(){
-        return new Result("success",200,null);
+    public static <T> Result<T> success() {
+        Result<T> result = new Result<>();
+        result.setMsg("success");
+        result.setCode(200);
+        return result;
     }
 
-    //成功响应 返回数据
-    public static Result success(Object data){
-        return new Result("success",200,data);
+    //成功响应 返回数据和token
+    public static <T> Result<T> success( String token, Integer expire) {
+        Result<T> result = new Result<>();
+        result.setMsg("success");
+        result.setCode(200);
+        result.setToken(token);
+        result.setExpire(expire);
+        return result;
     }
 
     //失败响应
-    public static Result error(String msg,int code, boolean codeShow){
-        return new Result(msg,code,false);
+    public static <T> Result<T> error(String msg, int code, boolean codeShow) {
+        Result<T> result = new Result<>();
+        result.setMsg(msg);
+        result.setCode(code);
+        result.setCodeShow(codeShow);
+        return result;
     }
 
 

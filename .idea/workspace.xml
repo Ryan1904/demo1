@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="">
+    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="修改数据返回格式">
+      <change afterPath="$PROJECT_DIR$/后端考核测试用例.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0f5ed2b5-ab8d-43ae-a6c9-b563eac209a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0f5ed2b5-ab8d-43ae-a6c9-b563eac209a2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/Result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/Result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/Result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/Result/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/JwtClaimsConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/JwtClaimsConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/util/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +49,15 @@
     <option name="jreName" value="21" />
   </component>
   <component name="ProjectId" id="2joNA5flY3iotY5PzmGrArV46Eg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -57,10 +71,11 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -101,12 +116,25 @@
       <workItem from="1722169660798" duration="6686000" />
       <workItem from="1722176501460" duration="860000" />
       <workItem from="1722177389124" duration="561000" />
-      <workItem from="1722177977511" duration="6851000" />
+      <workItem from="1722177977511" duration="8335000" />
+      <workItem from="1722186417583" duration="66000" />
+      <workItem from="1722352774611" duration="384000" />
+      <workItem from="1722524723271" duration="6630000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="登录接口" />
+    <MESSAGE value="修改数据返回格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改数据返回格式" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demo$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1722172300276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
