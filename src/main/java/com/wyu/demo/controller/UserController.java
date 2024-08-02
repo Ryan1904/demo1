@@ -8,13 +8,11 @@ import com.wyu.demo.pojo.exception.CaptchaErrorException;
 import com.wyu.demo.pojo.exception.PasswordErrorException;
 import com.wyu.demo.pojo.util.JwtUtil;
 import com.wyu.demo.pojo.vo.UserLoginVO;
+import com.wyu.demo.service.CaptchaService;
 import com.wyu.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.security.auth.login.AccountNotFoundException;
 import java.util.HashMap;
@@ -27,12 +25,18 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private CaptchaService captchaService;
+
+
 
     @PostMapping("/login")
     public Result<User> UserLogin(@RequestBody UserLoginVO userLoginVO) {
         log.info("用户登录操作");
         try {
             User login = userService.login(userLoginVO); // 登录成功后，生成jwt令牌
+            captchaService.ResetLoginFailCount(userLoginVO.getUsername()); // 重置登录失败次数
+
             Map<String, Object> claims = new HashMap<>();
             claims.put(JwtClaimsConstant.USERNAME, login.getUsername());
 
@@ -41,24 +45,22 @@ public class UserController {
             Integer expire = JwtUtil.getExpire();
             log.info("用户令牌为:{}", token);
 
-            /*
-            User user = User.builder()
-                    .id(login.getId())
-                    .username(login.getUsername())
-                    .token(token)
-                    .build();
-             */
-
             return Result.success(token,expire);
         } catch (CaptchaErrorException e) {
-            return Result.error(MessageConstant.Captcha_ERROR, 500, false); //TODO codeShow写死为false
+            return Result.error(MessageConstant.Captcha_ERROR, 500, true);
         } catch (PasswordErrorException e) {
-            return Result.error(MessageConstant.PASSWORD_ERROR, 500, false); //TODO codeShow写死为false
+            Integer failCount = captchaService.getLoginFailCount(userLoginVO.getUsername());
+            if (failCount >= 5) {
+                String captcha = captchaService.CreateCaptcha(); //TODO 不用返回给前端？
+                return Result.error(MessageConstant.PASSWORD_ERROR, 500, true);
+            }
+            return Result.error(MessageConstant.PASSWORD_ERROR, 500, false);
         } catch (AccountNotFoundException e) {
-            return Result.error(MessageConstant.ACCOUNT_NOT_FOUND, 500, false); //TODO codeShow写死为false
+            return Result.error(MessageConstant.ACCOUNT_NOT_FOUND, 500, false);
         } catch (Exception e) {
             log.error("Unknown error: ", e);
             return Result.error("Unknown error occurred", 500, false);
         }
     }
+
 }

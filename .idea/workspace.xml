@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="修改数据返回格式">
-      <change afterPath="$PROJECT_DIR$/后端考核测试用例.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0f5ed2b5-ab8d-43ae-a6c9-b563eac209a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0f5ed2b5-ab8d-43ae-a6c9-b563eac209a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/util/CaptchaUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/CaptchaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/CaptchaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/Result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/Result/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/Result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/Result/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/JwtClaimsConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/JwtClaimsConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/util/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -119,8 +126,17 @@
       <workItem from="1722177977511" duration="8335000" />
       <workItem from="1722186417583" duration="66000" />
       <workItem from="1722352774611" duration="384000" />
-      <workItem from="1722524723271" duration="6630000" />
+      <workItem from="1722524723271" duration="6796000" />
+      <workItem from="1722608324885" duration="7494000" />
     </task>
+    <task id="LOCAL-00001" summary="修改数据返回格式">
+      <created>1722531626289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722531626289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

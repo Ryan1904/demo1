@@ -6,6 +6,7 @@ import com.wyu.demo.pojo.User;
 import com.wyu.demo.pojo.exception.CaptchaErrorException;
 import com.wyu.demo.pojo.exception.PasswordErrorException;
 import com.wyu.demo.pojo.vo.UserLoginVO;
+import com.wyu.demo.service.CaptchaService;
 import com.wyu.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private CaptchaService captchaService;
 
     public User login(UserLoginVO userLoginVO) throws AccountNotFoundException, PasswordErrorException, CaptchaErrorException {
         String username = userLoginVO.getUsername();
@@ -39,7 +42,13 @@ public class UserServiceImpl implements UserService {
         //处理各种异常情况
         if (user_login == null){
             //账号不存在
+            captchaService.AddLoginFailCount(username);
             throw new AccountNotFoundException(MessageConstant.ACCOUNT_NOT_FOUND);
+        }
+
+        // 验证码逻辑（如果失败次数超过5次，则需要验证码）
+        if (user_login.getLoginFailCount() > 5 && !"1234".equals(captcha)) {
+            throw new CaptchaErrorException(MessageConstant.Captcha_ERROR);
         }
 
         // 使用MD5加密用户输入的密码
