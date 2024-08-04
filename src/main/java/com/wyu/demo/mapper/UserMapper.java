@@ -2,6 +2,7 @@ package com.wyu.demo.mapper;
 
 import com.wyu.demo.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 @Mapper
@@ -15,4 +16,9 @@ public interface UserMapper {
 
     @Update("UPDATE user SET login_fail_count = #{loginFailCount} WHERE username = #{username}")
     void updateLoginFailCount(User user);
+
+    void userRegister(User user);
+
+    User getByPhone(String phone);
+
 }

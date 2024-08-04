@@ -45,4 +45,12 @@ public class Result<T> {
         return result;
     }
 
+    //失败响应（不带codeShow）
+    public static <T> Result<T> error(String msg, int code) {
+        Result<T> result = new Result<>();
+        result.setMsg(msg);
+        result.setCode(code);
+        return result;
+    }
+
 }

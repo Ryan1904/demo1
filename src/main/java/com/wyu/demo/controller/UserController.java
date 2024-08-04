@@ -4,22 +4,24 @@ import com.wyu.demo.pojo.Result.Result;
 import com.wyu.demo.pojo.User;
 import com.wyu.demo.pojo.constant.JwtClaimsConstant;
 import com.wyu.demo.pojo.constant.MessageConstant;
+import com.wyu.demo.pojo.exception.AccountNotFoundException;
 import com.wyu.demo.pojo.exception.CaptchaErrorException;
 import com.wyu.demo.pojo.exception.PasswordErrorException;
+import com.wyu.demo.pojo.exception.RegisterErrorException;
 import com.wyu.demo.pojo.util.JwtUtil;
 import com.wyu.demo.pojo.vo.UserLoginVO;
+import com.wyu.demo.pojo.vo.UserRegisterVO;
 import com.wyu.demo.service.CaptchaService;
 import com.wyu.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.security.auth.login.AccountNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/sys")
+@RequestMapping("/sys/user")
 @Slf4j
 public class UserController {
 
@@ -47,7 +49,7 @@ public class UserController {
 
             return Result.success(token,expire);
         } catch (CaptchaErrorException e) {
-            return Result.error(MessageConstant.Captcha_ERROR, 500, true);
+            return Result.error(MessageConstant.CAPTCHA_ERROR, 500, true);
         } catch (PasswordErrorException e) {
             Integer failCount = captchaService.getLoginFailCount(userLoginVO.getUsername());
             if (failCount >= 5) {
@@ -63,4 +65,22 @@ public class UserController {
         }
     }
 
+    @PostMapping("/register")
+    public Result UserRegister(@RequestBody UserRegisterVO userRegisterVO){
+        log.info("用户注册操作");
+        try{
+            if (userRegisterVO.getUsername() == null || userRegisterVO.getPassword() == null ||
+                    userRegisterVO.getPhone() == null || userRegisterVO.getName() == null){
+                return Result.error( "对应项为空，请检查后重新提交",400);
+            }
+            userService.Register(userRegisterVO);
+            return Result.success();
+        }catch (RegisterErrorException e){
+            return Result.error(e.getMessage(),400);
+        } catch (Exception e) {
+            log.error("Unknown error: ", e);
+            return Result.error("Unknown error occurred", 500);
+        }
+    }
 }
+
