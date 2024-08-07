@@ -1,6 +1,6 @@
 package com.wyu.demo.service;
 
-import com.wyu.demo.pojo.User;
+import com.wyu.demo.pojo.Entity.User;
 import com.wyu.demo.pojo.exception.CaptchaErrorException;
 import com.wyu.demo.pojo.exception.PasswordErrorException;
 import com.wyu.demo.pojo.exception.RegisterErrorException;

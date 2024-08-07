@@ -1,7 +1,7 @@
 package com.wyu.demo.service.impl;
 
 import com.wyu.demo.mapper.UserMapper;
-import com.wyu.demo.pojo.User;
+import com.wyu.demo.pojo.Entity.User;
 import com.wyu.demo.pojo.util.CaptchaUtil;
 import com.wyu.demo.service.CaptchaService;
 import lombok.extern.slf4j.Slf4j;

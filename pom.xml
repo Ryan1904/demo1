@@ -87,6 +87,16 @@
 			<version>5.8.22</version>
 		</dependency>
 
+		<!--JavaMail-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+
+
 
 
 	</dependencies>

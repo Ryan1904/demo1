@@ -1,7 +1,7 @@
 package com.wyu.demo.controller;
 
 import com.wyu.demo.pojo.Result.Result;
-import com.wyu.demo.pojo.User;
+import com.wyu.demo.pojo.Entity.User;
 import com.wyu.demo.pojo.constant.JwtClaimsConstant;
 import com.wyu.demo.pojo.constant.MessageConstant;
 import com.wyu.demo.pojo.exception.AccountNotFoundException;

@@ -4,26 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="登录接口验证码显示">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/exception/RegisterErrorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/vo/UserRegisterVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/MailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/Entity/ToEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/sendMailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/sendMailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/constant/JwtClaimsConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/constant/JwtClaimsConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/constant/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/constant/MessageConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/exception/AccountNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/exception/AccountNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/exception/CaptchaErrorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/exception/CaptchaErrorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/pojo/Entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/CaptchaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/CaptchaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/CaptchaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/CaptchaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/Result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/Result/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/JwtClaimsConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/JwtClaimsConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/MessageConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/constant/MessageConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/exception/AccountNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/exception/AccountNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/exception/CaptchaErrorException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/pojo/exception/CaptchaErrorException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wyu/demo/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +92,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -129,7 +138,9 @@
       <workItem from="1722352774611" duration="384000" />
       <workItem from="1722524723271" duration="6796000" />
       <workItem from="1722608324885" duration="8046000" />
-      <workItem from="1722745300518" duration="13900000" />
+      <workItem from="1722745300518" duration="16457000" />
+      <workItem from="1722858937308" duration="699000" />
+      <workItem from="1723032820755" duration="5997000" />
     </task>
     <task id="LOCAL-00001" summary="修改数据返回格式">
       <created>1722531626289</created>
@@ -145,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722616144984</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="注册接口">
+      <created>1722782586561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722782586561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +177,8 @@
     <MESSAGE value="登录接口" />
     <MESSAGE value="修改数据返回格式" />
     <MESSAGE value="登录接口验证码显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录接口验证码显示" />
+    <MESSAGE value="注册接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

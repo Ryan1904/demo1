@@ -1,4 +1,4 @@
-package com.wyu.demo.pojo;
+package com.wyu.demo.pojo.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

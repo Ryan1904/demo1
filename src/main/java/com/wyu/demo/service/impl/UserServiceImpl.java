@@ -3,7 +3,7 @@ package com.wyu.demo.service.impl;
 import com.wyu.demo.mapper.UserMapper;
 import com.wyu.demo.pojo.constant.JwtClaimsConstant;
 import com.wyu.demo.pojo.constant.MessageConstant;
-import com.wyu.demo.pojo.User;
+import com.wyu.demo.pojo.Entity.User;
 import com.wyu.demo.pojo.exception.AccountNotFoundException;
 import com.wyu.demo.pojo.exception.CaptchaErrorException;
 import com.wyu.demo.pojo.exception.PasswordErrorException;
