@@ -1,8 +1,6 @@
 package com.wyu.demo.service;
 
 
-import com.wyu.demo.pojo.User;
-
 public interface CaptchaService {
     /**
      * 登录密码错误次数增加

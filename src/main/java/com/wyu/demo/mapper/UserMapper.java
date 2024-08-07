@@ -1,8 +1,7 @@
 package com.wyu.demo.mapper;
 
-import com.wyu.demo.pojo.User;
+import com.wyu.demo.pojo.Entity.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 @Mapper
