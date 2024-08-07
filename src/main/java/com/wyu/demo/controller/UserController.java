@@ -61,7 +61,7 @@ public class UserController {
             return Result.error(MessageConstant.ACCOUNT_NOT_FOUND, 500, false);
         } catch (Exception e) {
             log.error("Unknown error: ", e);
-            return Result.error("Unknown error occurred", 500, false);
+            return Result.error("Unknown error occurred", 500, false); //TODO codeShow要写吗？
         }
     }
 

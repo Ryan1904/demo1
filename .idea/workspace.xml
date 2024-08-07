@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="" />
+    <list default="true" id="3bc1e198-7946-4587-b5be-ae7c25e4a9cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/MailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/sendMailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wyu/demo/service/sendMailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +118,7 @@
       <workItem from="1722608324885" duration="8046000" />
       <workItem from="1722745300518" duration="16457000" />
       <workItem from="1722858937308" duration="699000" />
-      <workItem from="1723032820755" duration="6243000" />
+      <workItem from="1723032820755" duration="8787000" />
     </task>
     <task id="LOCAL-00001" summary="修改数据返回格式">
       <created>1722531626289</created>
@@ -141,11 +148,36 @@
       <option name="project" value="LOCAL" />
       <updated>1723039301985</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="邮件发送接口">
+      <created>1723039345698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723039345698</updated>
+    </task>
+    <task id="LOCAL-00006" summary="邮件发送接口">
+      <created>1723039422090</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723039422090</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -155,24 +187,9 @@
     <MESSAGE value="登录接口" />
     <MESSAGE value="修改数据返回格式" />
     <MESSAGE value="登录接口验证码显示" />
-    <MESSAGE value="注册接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册接口" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/CaptchaServiceImpl.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wyu/demo/service/impl/CaptchaServiceImpl.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="邮箱发送接口" />
+    <MESSAGE value="邮件发送接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="邮件发送接口" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

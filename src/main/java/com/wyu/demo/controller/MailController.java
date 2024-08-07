@@ -27,10 +27,10 @@ public class MailController {
             return Result.success();
         }catch (MailException e) {
             log.info("发送失败：{}",e);
-            return Result.error("发送未成功，请检查后再重试", 500); //TODO
+            return Result.error("发送未成功，请检查后再重试", 500);
         }catch (Exception e) {
             log.error("Unknown error: ", e);
-            return Result.error("Unknown error occurred", 500, false);
+            return Result.error("Unknown error occurred", 500);
         }
     }
 }

@@ -17,5 +17,10 @@ public interface UserService {
      */
     User login(UserLoginVO userLoginVO) throws AccountNotFoundException, PasswordErrorException, CaptchaErrorException, com.wyu.demo.pojo.exception.AccountNotFoundException;
 
+    /**
+     * 用户注册
+     * @param userRegisterVO 注册信息
+     * @throws RegisterErrorException
+     */
     void Register(UserRegisterVO userRegisterVO) throws RegisterErrorException;
 }
