@@ -1,4 +1,0 @@
-INSERT INTO `user` (`id`, `name`, `username`, `password`, `token`, `captcha`, `Login_Fail_Count`, `sex`, `phone`) VALUES (1, '老王', 'wyu', '123456', 'e10adc3949ba59abbe56e057f20f883e', '1234', 0, 1, '12345678910');
-INSERT INTO `user` (`id`, `name`, `username`, `password`, `token`, `captcha`, `Login_Fail_Count`, `sex`, `phone`) VALUES (2, '老张', '123', '123456', 'e10adc3949ba59abbe56e057f20f883e', '1234', 0, 1, '12345678911');
-INSERT INTO `user` (`id`, `name`, `username`, `password`, `token`, `captcha`, `Login_Fail_Count`, `sex`, `phone`) VALUES (3, '不知名', 'null', '123456', NULL, '1234', 0, 1, '12345678912');
-INSERT INTO `user` (`id`, `name`, `username`, `password`, `token`, `captcha`, `Login_Fail_Count`, `sex`, `phone`) VALUES (6, '老王', '123456', '123456', 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFzbGRqbGsiLCJleHAiOjE3MjI4MjM3MTh9.EEo4NpDR93mXGcNwGM_w7MSgjGaZTJSJuFS1XHs-5K0', '1234', 0, 1, '15421541523');
